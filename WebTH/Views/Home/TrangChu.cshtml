@@ -1,0 +1,205 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout1.cshtml";
+}
+<style type="text/css">
+    #banner {
+        background-image: url('../../content/images/darksoul - eldenring - bloodborne.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-content{
+        text-align:center;
+        color: black;
+
+    }
+    .banner-content h1{
+        font-size: 2.5rem;
+    }
+    .banner-content p{
+        font-size:2rem;
+    }
+    .btn{
+        display:inline-block;
+        padding: 5px 20px;
+        background-color:darkgoldenrod;
+        color: white;
+        text-decoration: none;
+        font-weight:bold;
+    }
+    #FeatureProd{
+        text-align:center;
+    }
+    #FeatureProd h1{
+        font-size:2rem;
+        margin-bottom: 20px;
+    }
+    .ProdContainer{
+        display:flex;
+        justify-content:center;
+        gap: 10px;
+    }
+    .Product-item{
+        width: 200px;
+    }
+    .Product-item img{
+        max-width:150px;
+
+    }
+    .Product-item h3{
+        font-size:16px;
+        color: black;
+        margin: 10px 0px;
+    }
+    .ProdDescription{
+        /*font:arial;*/
+        font-size:10px;
+        color:dimgray;
+    }
+    .prodPrice{
+        font-size:12px;
+        color:black;
+        font-weight:bold;
+    }
+    /*//Nut search*/
+    .search-section {
+        text-align: center;
+    }
+
+        #search-section h2 {
+            text-align:center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+    }
+
+    #search-button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    #search-button:hover {
+            background-color: #555;
+    }
+
+
+
+</style>
+<style>
+    .product-list {
+        text-align: center;
+    }
+
+        .product-list h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    .list-container {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .product-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h1 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-item .price {
+            font-weight: bold;
+        }
+</style>
+<section id="banner">
+    <div class="banner-content">
+        <h1> Chào mừng đến với web</h1>
+        <p> Hàng ngàn sản phẩm hay đang chờ bạn!</p>
+        <a href="#" class="btn"> Bắt đầu mua sắm </a>
+    </div>
+</section>
+<section id="Content">
+    <section id="search-section" class="content-section">
+        <h2>Tìm kiểm sản phẩm</h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Nhập từ khóa......" />
+            <button id="search-button">Tìm kiếm</button>
+        </div>
+
+
+
+    </section>
+    <section id="FeatureProd" class="content-section">
+        <h1>Sản phẩm nổi bật</h1>
+        <div class="ProdContainer">
+            <div class="Product-item">
+                <img src="~/Content/Images/acer_aspire_lite_16_al16_51p_32f7ef9aef.png" />
+                <h2>Acer Asphire Lite</h2>
+                <p class="ProdDescription">Acer Aspire Lite AL16-51P-596H là chiếc laptop mỏng nhẹ đa năng cho sinh viên và dân văn phòng.</p>
+                <p class="prodPrice">12.490.000 ₫</p>
+            </div>
+            <div class="Product-item">
+                <img src="~/Content/Images/Laptop Dell Inspiron N3530.png" />
+                <h2>Laptop Dell Inspiron N3530</h2>
+                <p class="ProdDescription">Dell Inspiron N3530 là một lựa chọn tốt trong phân khúc laptop tầm 20 triệu đồng. </p>
+                <p class="prodPrice">18.490.000 ₫</p>
+            </div>
+            <div class="Product-item">
+                <img src="~/Content/Images/Laptop Lenovo Ideapad Slim 3 - 15ABR8.jpg" />
+                <h2>Laptop Lenovo Ideapad Slim 3</h2>
+                <p class="ProdDescription">Lenovo Ideapad Slim 3 - 15ABR8 là chiếc laptop lý tưởng cho những người thường xuyên di chuyển.</p>
+                <p class="prodPrice">11.790.000 ₫</p>
+            </div>
+
+            <div class="Product-item">
+                <img src="~/Content/Images/Laptop ASUS Vivobook 14 OLED A1405ZA-KM264W.png" />
+                <h2>Laptop ASUS Vivobook 14 OLED</h2>
+                <p class="ProdDescription">Hướng tới nhóm người dùng chủ yếu là sinh viên và dân văn phòng, doanh nhân tối ưu để thuận tiện cho việc di chuyển.</p>
+                <p class="prodPrice">16.690.000 ₫</p>
+            </div>
+
+            <div class="Product-item">
+                <img src="~/Content/Images/Laptop Asus TUF Gaming FA507NUR-LP101W.png" />
+                <h2>Laptop Asus TUF Gaming</h2>
+                <p class="ProdDescription">Kế thừa phong cách đặc trưng của dòng TUF, chiếc laptop TUF Gaming FA507NUR-LP101W sở hữu thiết kế với những đường nét cơ học nổi bật mà tinh tế.</p>
+                <p class="prodPrice">26.990.000 ₫</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   
+</section>

@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout1.cshtml";
+}
+<style>
+    .product-list {
+        text-align: center;
+    }
+
+        .product-list h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+    .list-container {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .product-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-item h1 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-item .price {
+            font-weight: bold;
+        }
+</style>
+<section class="product-list">
+    <h2>Danh sách sản phẩm</h2>
+    <ul class="list-container">
+        <li class="product-item">
+            <img src="~/Content/Images/Điện thoại Xiaomi Redmi Note 13.jpg" />
+            <h1>Điện thoại Xiaomi Redmi Note 13</h1>
+            <p class="price">5.290.000₫</p>
+            <p>Điện thoại Xiaomi Redmi Note 13 là mẫu smartphone tầm trung phù hợp với đa dạng người dùng.</p>
+        </li>
+        <li class="product-item">
+            <img src="~/Content/Images/Điện thoại Samsung Galaxy S23 Ultra 5G.jpg" />
+            <h1>Điện thoại Samsung Galaxy S23 Ultra 5G</h1>
+            <p class="price">22.990.000₫</p>
+            <p>Samsung Galaxy S23 Ultra 5G là dòng smartphone cao cấp nhất của Samsung, mang lại hiệu năng mạnh mẽ, thiết kế tinh tế và nhiều tính năng vượt trội.</p>
+        </li>
+        <li class="product-item">
+            <img src="~/Content/Images/Điện thoại Samsung Galaxy Z Fold6 5G.jpg" />
+            <h1>Điện thoại Samsung Galaxy Z Fold6 5G</h1>
+            <p class="price">41.990.000₫</p>
+            <p>Samsung Galaxy Z Fold6 là mẫu smartphone màn hình gập cao cấp, tiếp nối sự thành công của dòng Galaxy Z Fold, với nhiều cải tiến vượt trội về thiết kế, cấu hình và tính năng.</p>
+        </li>
+    </ul>
+</section>

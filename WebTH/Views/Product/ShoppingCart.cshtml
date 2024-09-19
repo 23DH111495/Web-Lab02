@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout1.cshtml";
+}
+
+
+<style>
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        padding:10px;
+    }
+    .logo{
+        height: 50px; /* Adjust size as needed */
+        width: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .cart{
+        position: relative;
+    }
+    .fa-shopping-cart{
+        font-size:24px;
+    }
+    .cart-count{
+        position: absolute;
+        top: -5px; 
+        right: -5px;
+        background-color: red;
+        color: white;
+        font-size:12px;
+        padding: 2px 6px;
+        border-radius:50%;
+    }
+</style>
+
+
+
+
+
+
+<header>
+    <div class="logo">
+        <img src="~/Content/Images/grocery-store.png" />
+    </div>
+    <div class="cart">
+        <a href="giohang.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">3</span>
+        </a>
+    </div>
+</header>

@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout1.cshtml";
+}
+<style>
+    .search-section{
+        text-align:center;
+    }
+    .search-secton h2{
+        font-size:24px;
+        margin-bottom:20px;
+    }
+    .search-container{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    #search-input{
+        width:300px;
+        padding:10px;
+        border: 1px solid #ccc;
+        border-radius:5px 0 0 5px;
+    }
+    #search-button{
+        padding:10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius:0 5px 5px 0;
+        cursor:pointer;
+    }
+    #search-button:hover{
+        background-color: #555;
+    }
+</style>
+
+
+
+<section class="search-section">
+    <h2>Tìm kiểm sản phẩm</h2>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Nhập từ khóa......"/>
+        <button id="search-button">Tìm kiếm</button>
+    </div>
+</section>
